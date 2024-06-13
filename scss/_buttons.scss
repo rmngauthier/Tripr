@@ -1,0 +1,17 @@
+@use "variables" as vars;
+@use "mixins";
+
+.primary-btn {
+  display: flex;
+  height: 52px;
+  padding: 14px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: vars.$primary-500;
+  cursor: pointer;
+
+  //   font
+
+  @include mixins.btn-font;
+}

@@ -1,0 +1,40 @@
+@use "variables" as vars;
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vars.$primary-font;
+}
+
+body {
+  background-color: vars.$background-500;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+// typography
+
+h1 {
+  color: vars.$secondary-500;
+  font-size: 3.625rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+}
+
+p {
+  color: vars.$font-color;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+}

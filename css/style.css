@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+h1 {
+  color: #163d49;
+  font-size: 3.625rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+}
+
+p {
+  color: #94a6ab;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+}
+
+.primary-btn {
+  display: flex;
+  height: 52px;
+  padding: 14px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #f29383;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 146px;
+  background: white;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.38rem;
+}
+
+.logo {
+  margin-right: 11.625rem;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 52px;
+}
+.topbar-content .navlinks-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.topbar-content li {
+  color: #94a6ab;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  transition: 0.3s;
+  margin-right: 3.438rem;
+  cursor: pointer;
+}
+.topbar-content li:nth-last-child(2) {
+  margin-right: 0;
+}
+.topbar-content li:last-child {
+  margin-left: 11.625rem;
+  margin-right: 1.12rem;
+}
+.topbar-content li:hover {
+  color: #f29383;
+  transition: 0.3s;
+}
+
+.hero {
+  display: flex;
+  width: 1300px;
+  height: 687px;
+}
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.125rem;
+  flex: 1 0 0;
+  max-width: 640px;
+  margin-right: 4.75rem;
+}
+
+.hero-img {
+  display: flex;
+  position: relative;
+  width: 584px;
+}
+.hero-img .img-1 {
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  background-image: url(/assets/backpackers-mountain-hero-img.jpg);
+  background-size: cover;
+  width: 407px;
+  height: 523px;
+  border-radius: 473px;
+}
+.hero-img .img-2 {
+  position: absolute;
+  top: 232px;
+  left: 292px;
+  background-image: url(/assets/beach-pics-for-hero-img.jpg);
+  background-size: cover;
+  width: 215px;
+  height: 277px;
+  border-radius: 473px;
+  border: solid 16px #f6f6f6;
+}
+
+/*# sourceMappingURL=style.css.map */

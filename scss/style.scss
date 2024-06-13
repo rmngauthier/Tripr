@@ -1,0 +1,89 @@
+@use "variables" as vars;
+@use "reset";
+@use "buttons";
+@use "utilities";
+@use "mixins";
+
+// topbar
+
+.logo {
+  margin-right: 11.625rem;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 52px;
+
+  .navlinks-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  li {
+    @include mixins.navlink-style;
+    margin-right: 3.438rem;
+    cursor: pointer;
+
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-left: 11.625rem;
+      margin-right: 1.12rem;
+    }
+
+    &:hover {
+      @include mixins.navlink-hover;
+    }
+  }
+}
+
+// hero
+
+.hero {
+  display: flex;
+  width: 1300px;
+  height: 687px;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.125rem;
+    flex: 1 0 0;
+    max-width: 640px;
+    margin-right: 4.75rem;
+  }
+}
+
+.hero-img {
+  display: flex;
+  position: relative;
+  width: 584px;
+
+  .img-1 {
+    position: absolute;
+    top: 25px;
+    left: 32px;
+    background-image: url(/assets/backpackers-mountain-hero-img.jpg);
+    background-size: cover;
+    width: 407px;
+    height: 523px;
+    border-radius: 473px;
+  }
+
+  .img-2 {
+    position: absolute;
+    top: 232px;
+    left: 292px;
+    background-image: url(/assets/beach-pics-for-hero-img.jpg);
+    background-size: cover;
+    width: 215px;
+    height: 277px;
+    border-radius: 473px;
+    border: solid 16px vars.$background-500;
+  }
+}
