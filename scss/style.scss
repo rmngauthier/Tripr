@@ -56,6 +56,36 @@
     flex: 1 0 0;
     max-width: 640px;
     margin-right: 4.75rem;
+
+    .search-widget {
+      @include mixins.search-widget-container-large;
+
+      .location {
+        display: flex;
+        margin-left: 5rem;
+        margin-right: 1.62rem;
+        width: 134px;
+        height: 40px;
+
+        .locations-details {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .date {
+        display: flex;
+        margin-left: 1.62rem;
+        margin-right: 0.81rem;
+        width: 134px;
+        height: 40px;
+
+        .date-details {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
 

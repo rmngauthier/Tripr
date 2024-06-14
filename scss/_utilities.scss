@@ -4,7 +4,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 146px;
   background: white;
   box-shadow: vars.$box-shadow-primary;
@@ -15,4 +14,18 @@ section {
   flex-direction: column;
   align-items: center;
   margin-top: 3.38rem;
+}
+
+.widget-icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 0.69rem;
+}
+
+// separator
+
+.separator-type-1 {
+  width: 1px;
+  height: 35px;
+  background-color: vars.$font-color;
 }

@@ -38,3 +38,19 @@ p {
   font-weight: 400;
   line-height: 1.875rem; /* 166.667% */
 }
+
+.label {
+  color: vars.$font-color;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+}
+
+.value {
+  color: vars.$secondary-500;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+}
