@@ -1,5 +1,15 @@
 @use "variables" as vars;
 
+// typo
+
+@mixin number-typo-style {
+  color: vars.$primary-500;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 145.833% */
+}
+
 // navlinks
 
 @mixin navlink-style {

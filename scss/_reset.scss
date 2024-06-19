@@ -1,4 +1,5 @@
 @use "variables" as vars;
+@use "mixins";
 
 // reset
 
@@ -32,6 +33,22 @@ h1 {
   line-height: 4.375rem;
 }
 
+h2 {
+  color: vars.$secondary-500;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.375rem; /* 145.833% */
+}
+
+h3 {
+  color: vars.$primary-500;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 142.857% */
+}
+
 p {
   color: vars.$font-color;
   font-size: 1.125rem;
@@ -53,4 +70,8 @@ p {
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 166.667% */
+}
+
+.key-number {
+  @include mixins.number-typo-style;
 }

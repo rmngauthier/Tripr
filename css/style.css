@@ -27,6 +27,22 @@ h1 {
   line-height: 4.375rem;
 }
 
+h2 {
+  color: #163d49;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.375rem; /* 145.833% */
+}
+
+h3 {
+  color: #f29383;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 142.857% */
+}
+
 p {
   color: #94a6ab;
   font-size: 1.125rem;
@@ -48,6 +64,14 @@ p {
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 166.667% */
+}
+
+.key-number {
+  color: #f29383;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 145.833% */
 }
 
 .primary-btn {
@@ -103,10 +127,22 @@ section {
   margin-top: 3.38rem;
 }
 
+.hero-container {
+  display: flex;
+  width: 1300px;
+  height: 687px;
+}
+
 .widget-icon-container {
   display: flex;
   align-items: center;
   margin-right: 0.69rem;
+}
+
+.about-container {
+  display: flex;
+  width: 1300px;
+  height: 687px;
 }
 
 .separator-type-1 {
@@ -151,12 +187,7 @@ section {
   transition: 0.3s;
 }
 
-.hero {
-  display: flex;
-  width: 1300px;
-  height: 687px;
-}
-.hero .hero-content {
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +196,7 @@ section {
   max-width: 640px;
   margin-right: 4.75rem;
 }
-.hero .hero-content .search-widget {
+.hero-content .search-widget {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -175,25 +206,25 @@ section {
   background: #fff;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
-.hero .hero-content .search-widget .location {
+.hero-content .search-widget .location {
   display: flex;
   margin-left: 5rem;
   margin-right: 1.62rem;
   width: 134px;
   height: 40px;
 }
-.hero .hero-content .search-widget .location .locations-details {
+.hero-content .search-widget .location .locations-details {
   display: flex;
   flex-direction: column;
 }
-.hero .hero-content .search-widget .date {
+.hero-content .search-widget .date {
   display: flex;
   margin-left: 1.62rem;
   margin-right: 0.81rem;
   width: 134px;
   height: 40px;
 }
-.hero .hero-content .search-widget .date .date-details {
+.hero-content .search-widget .date .date-details {
   display: flex;
   flex-direction: column;
 }
@@ -207,7 +238,7 @@ section {
   position: absolute;
   top: 25px;
   left: 32px;
-  background-image: url(/assets/backpackers-mountain-hero-img.jpg);
+  background-image: url(/assets/Europe-city-pics-for-hero.jpg);
   background-size: cover;
   width: 407px;
   height: 523px;
@@ -223,6 +254,58 @@ section {
   height: 277px;
   border-radius: 473px;
   border: solid 16px #f6f6f6;
+}
+
+.img-3 {
+  position: absolute;
+  top: 13px;
+  left: 51px;
+  background-image: url(/assets/Roma-city-for-about-section.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 583px;
+  border-radius: 486px;
+}
+
+.img-4 {
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  background-image: url(/assets/Bucarest-city-for-about-content.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 435px;
+  border-radius: 145px;
+  border: solid 10px #f6f6f6;
+}
+
+.about-img {
+  display: flex;
+  position: relative;
+  width: 584px;
+  height: 687px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 658px;
+  height: 687px;
+}
+
+.about-value-prop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.4375rem;
+}
+
+.key-number-container {
+  display: flex;
+  width: 123px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */

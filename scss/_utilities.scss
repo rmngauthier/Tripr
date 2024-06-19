@@ -9,6 +9,8 @@ header {
   box-shadow: vars.$box-shadow-primary;
 }
 
+// container
+
 section {
   display: flex;
   flex-direction: column;
@@ -16,10 +18,22 @@ section {
   margin-top: 3.38rem;
 }
 
+.hero-container {
+  display: flex;
+  width: 1300px;
+  height: 687px;
+}
+
 .widget-icon-container {
   display: flex;
   align-items: center;
   margin-right: 0.69rem;
+}
+
+.about-container {
+  display: flex;
+  width: 1300px;
+  height: 687px;
 }
 
 // separator

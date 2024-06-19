@@ -43,47 +43,41 @@
 
 // hero
 
-.hero {
+.hero-content {
   display: flex;
-  width: 1300px;
-  height: 687px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.125rem;
+  flex: 1 0 0;
+  max-width: 640px;
+  margin-right: 4.75rem;
 
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.125rem;
-    flex: 1 0 0;
-    max-width: 640px;
-    margin-right: 4.75rem;
+  .search-widget {
+    @include mixins.search-widget-container-large;
 
-    .search-widget {
-      @include mixins.search-widget-container-large;
+    .location {
+      display: flex;
+      margin-left: 5rem;
+      margin-right: 1.62rem;
+      width: 134px;
+      height: 40px;
 
-      .location {
+      .locations-details {
         display: flex;
-        margin-left: 5rem;
-        margin-right: 1.62rem;
-        width: 134px;
-        height: 40px;
-
-        .locations-details {
-          display: flex;
-          flex-direction: column;
-        }
+        flex-direction: column;
       }
+    }
 
-      .date {
+    .date {
+      display: flex;
+      margin-left: 1.62rem;
+      margin-right: 0.81rem;
+      width: 134px;
+      height: 40px;
+
+      .date-details {
         display: flex;
-        margin-left: 1.62rem;
-        margin-right: 0.81rem;
-        width: 134px;
-        height: 40px;
-
-        .date-details {
-          display: flex;
-          flex-direction: column;
-        }
+        flex-direction: column;
       }
     }
   }
@@ -98,7 +92,7 @@
     position: absolute;
     top: 25px;
     left: 32px;
-    background-image: url(/assets/backpackers-mountain-hero-img.jpg);
+    background-image: url(/assets/Europe-city-pics-for-hero.jpg);
     background-size: cover;
     width: 407px;
     height: 523px;
@@ -116,4 +110,58 @@
     border-radius: 473px;
     border: solid 16px vars.$background-500;
   }
+}
+
+// about
+
+.img-3 {
+  position: absolute;
+  top: 13px;
+  left: 51px;
+  background-image: url(/assets/Roma-city-for-about-section.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 583px;
+  border-radius: 486px;
+}
+
+.img-4 {
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  background-image: url(/assets/Bucarest-city-for-about-content.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 435px;
+  border-radius: 145px;
+  border: solid 10px vars.$background-500;
+}
+
+.about-img {
+  display: flex;
+  position: relative;
+  width: 584px;
+  height: 687px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 658px;
+  height: 687px;
+}
+
+.about-value-prop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.4375rem;
+}
+
+.key-number-container {
+  display: flex;
+  width: 123px;
+  flex-direction: column;
+  align-items: flex-start;
 }
